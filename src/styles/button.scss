@@ -4,13 +4,16 @@
     border-radius: 8px;
     font-weight: 500;
     background: #835afd;
-    color: #fff;
+    color: #FFF;
     padding: 0 32px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     cursor: pointer;
     border: 0;
+
     transition: filter 0.2s;
 
     img {
@@ -21,9 +24,8 @@
         filter: brightness(0.9);
     }
 
-    &:disable {
-opacity: 0.6;
-cursor:not-allowed;
-
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
     }
 }

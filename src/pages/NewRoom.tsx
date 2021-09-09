@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
 import illustrationImg from '../assets/images/illustration.svg'
@@ -5,10 +6,19 @@ import logoImg from '../assets/images/logo.svg';
 
 import { Button } from '../components/Button';
 // import { useAuth } from '../hooks/useAuth';
+=======
+import { Link } from 'react-router-dom';
+
+import illustration from '../assets/illustration.svg';
+import logoImg from '../assets/logo.svg';
+
+import { Button } from '../components/Button';
+>>>>>>> 19b0af957158b450465ebe22d9ffafe16ff7c6ad
 
 import '../styles/auth.scss';
 
 export function NewRoom() {
+<<<<<<< HEAD
   // const { user } = useAuth()
 
   return (
@@ -38,4 +48,34 @@ export function NewRoom() {
       </main>
     </div>
   )
+=======
+
+    return (
+        <div id="page-auth">
+            <aside>
+                <img src={illustration} alt="Ilustração simbolizando perguntas e respostas" />
+                <strong>Crie salas de Q&amp;A ao-vivo</strong>
+                <p>Tore as dúvidas da sua audiência em tempo-real</p>
+            </aside>
+            <main>
+                <div className="main-content">
+                    <img src={logoImg} alt="Letmeask" />
+                    <h2>Criar uma nova sala</h2>
+                    <form>
+                        <input
+                            type="text"
+                            placeholder="Nome da sala"
+                        />
+                        <Button type="submit">
+                            Criar sala
+                        </Button>
+                    </form>
+                    <p>
+                        Quer entrar em um sala existente? <Link to="/">clique aqui</Link>
+                    </p>
+                </div>
+            </main>
+        </div>
+    )
+>>>>>>> 19b0af957158b450465ebe22d9ffafe16ff7c6ad
 }
